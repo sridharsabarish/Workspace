@@ -1,0 +1,14 @@
+# Source:https://leetcode.com/problems/ads-performance/submissions/
+# Write your MySQL query statement below
+
+SELECT a1.ad_id, CASE WHEN c+v=0 THEN 0 else ROUND(100*c/(c+v),2) END  as ctr
+FROM
+
+(SELECT ad_id, SUM(CASE WHEN action='Clicked' THEN 1 else 0 END ) as c,SUM(CASE WHEN action='Viewed' THEN 1 else 0 END ) as v,
+count(1) as t
+FROM Ads
+GROUP BY ad_id
+
+
+) as a1
+ORDER BY ctr desc, a1.ad_id
