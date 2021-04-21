@@ -1,6 +1,4 @@
 # source : https://leetcode.com/problems/monotonic-array/submissions/
-
-
 class Solution(object):
     def isMonotonic(self, A):
         """
