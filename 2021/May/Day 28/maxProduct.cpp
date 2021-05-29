@@ -7,6 +7,5 @@ public:
         int minMax = nums[0]*nums[1]*nums[s-1];
         int maxMax = nums[s-1]*nums[s-2]*nums[s-3];
         return minMax>maxMax?minMax:maxMax;
-
     }
 };
