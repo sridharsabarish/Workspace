@@ -22,9 +22,4 @@ class Solution(object):
         if(len(string)):
             l.append(int(str(string)))
 
-        count =0;
-        for i in set(l):
-
-            count+=1;
-        print(l)
-        return count
+        return len(set(l))
