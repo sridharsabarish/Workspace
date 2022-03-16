@@ -20,3 +20,14 @@ then
 else
 	echo "Condition is false"
 fi		
+
+
+
+age=10
+
+if [ "$age" -gt 18 ] && [ "$age" -lt 40 ]
+then 
+	echo "Youth"
+else
+	echo "Not youth"
+fi
