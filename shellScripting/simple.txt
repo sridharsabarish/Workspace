@@ -1,0 +1,3 @@
+ Welcome to bash 
+hi there
+hi
