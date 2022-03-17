@@ -14,7 +14,7 @@ echo "Sum of Multiples of 3 or 5 below 1000 : $sums"
 
 sums=0
 number=0
-for number in {0..999}
+for number in {0..999..1}
 do
 	if [ $(($number % 3)) -eq 0 ]  ||   [ $(($number % 5)) -eq 0 ]
 	then 
