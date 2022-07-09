@@ -1,8 +1,8 @@
-# !/bin/bash
-cd ~/projects/Workspace 
+#!/bin/sh
+cd ~/Projects/Workspace
 git pull -v
 git add .
-git commit -m "Generated on, `date +'%Y-%m-%d %H:%M:%S'`";
+git commit -m "Coding Practice, `date +'%Y-%m-%d %H:%M:%S'`";
 git push
-echo "Successfully pushed to github";
+echo "Successfully pushed to github"
 
