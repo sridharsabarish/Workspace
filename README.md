@@ -1,4 +1,7 @@
-# Workspace
+# Why this repo
+**Purpose**
+* This repository serves as a habit tracker for programming
+* The solutions are complete (unless and otherwise mentioned in the comments).
+* Good resources to take a look at would be https://leetcode.com , https://projecteuler.net , https://www.geeksforgeeks.org
 
-- Daily Progress Made in Coding Exercises from Leetcode.
-- Coding Languages : Python, SQL
+For any clarifications or future collaborations please write to sabarish.sr[at]outlook[dot]com
