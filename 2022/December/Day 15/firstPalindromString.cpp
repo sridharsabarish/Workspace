@@ -3,9 +3,12 @@ class Solution {
 public:
     bool isPalindrome(string s)
     {
-        string copy =s;
-        reverse(s.begin(),s.end());
-        return s==copy;
+        short l=size(s);
+        for(int i=0;i<l/2;i++)
+        {
+            if(s[i]!=s[l-i-1]){return false;}
+        }
+        return true;
     }
     string firstPalindrome(vector<string>& words) {
         for(auto &i:words)
