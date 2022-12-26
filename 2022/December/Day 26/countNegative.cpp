@@ -2,8 +2,6 @@
 class Solution {
 public:
     int countNegatives(vector<vector<int>>& grid) {
-        
-        
         int imin=0;
         int jmin=0;
         int count=0;
@@ -18,11 +16,8 @@ public:
                     imin=i;
                     jmin=j;
                 }
-                
             }
         }
         return count;
-        
-        
     }
 };
