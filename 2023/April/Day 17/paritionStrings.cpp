@@ -13,9 +13,6 @@ Increase count when encountering a problem;
 
 */
 
-
-
-
 class Solution {
 public:
     int partitionString(string s) {
