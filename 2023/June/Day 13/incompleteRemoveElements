@@ -1,0 +1,55 @@
+/*
+
+Removing Inplace. How to do that?
+
+FInd element, shift all elements one place to the left
+
+
+*/
+
+class Solution {
+public:
+
+
+    vector<int> shiftElement(vector<int>& nums, int index)
+    {
+        
+        for(int i=index;i<size(nums)-1;i++)
+        {
+           
+
+
+        }
+
+        return nums;
+
+    }
+    int removeElement(vector<int>& nums, int val) {
+
+        int validLength=size(nums);
+        int i=0;
+        int temp=i;
+
+        if(size(nums)<1)return size(nums);
+        if(size(nums)==1)
+        {
+            if(nums[i]==val)return 0;
+            else return 1;
+
+        }
+
+        while(i<size(nums))
+        {
+            while(i<size(nums)-1 && nums[i]==val)
+            {
+                validLength--;
+                i++;
+            }
+            nums[temp]=nums[i];
+            temp++;
+            i++;
+        }
+        return validLength-1;
+        
+    }
+};
