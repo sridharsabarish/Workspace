@@ -1,0 +1,5 @@
+CC=gcc
+CFLAGS=-I.
+
+fibonacciDp: fibonacciDp.cpp
+     $(CC) -o fibonacciDp fibonacciDp.c $(CFLGAS) 
