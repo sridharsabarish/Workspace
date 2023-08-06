@@ -26,13 +26,6 @@ for(int i=2;i<=n;i++)
 cout<<endl;
 }
 
-
-/*
-To do : Generate Fibonacci using Top Down Approach, with and without memoization;
-Need to refine it to store it somewhere and print.
-*/
-
-
 map<int,int> fib; //
 
 int generateFibTopDown(int n)
