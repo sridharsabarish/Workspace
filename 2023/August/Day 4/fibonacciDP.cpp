@@ -1,5 +1,7 @@
 #include<iostream>
 #include<vector>
+#include<stdlib.h>
+#include<map>
 using namespace std;
 
 
@@ -29,13 +31,22 @@ To do : Generate Fibonacci using Top Down Approach, with and without memoization
 Need to refine it to store it somewhere and print.
 */
 
+
+map<int,int> fib; //
+
 int generateFibTopDown(int n)
 {
 
-    if(n==2 || n==1)
-    return 1;
 
-    return generateFibTopDown(n-1)+generateFibTopDown(n-2);
+    if(fib[n]!=NULL)
+    {
+      return fib[n];
+
+    }
+
+      fib[n]=generateFibTopDown(n-1)+generateFibTopDown(n-2);
+      return 0;
+    
 }
 
 
@@ -44,13 +55,20 @@ int generateFibTopDown(int n)
 int main()
 {
 
-
+fib[1]=1;
+fib[2]=1;
 // for(int i=3;i<30;i++)
 // {
 // generateFibBottomUp(i);
 // }
 cout<<generateFibTopDown(10)<<" \n";
-generateFibBottomUp(10);
+
+for(int i=1;i<n;i++)
+{
+  cout<<fib[i]<<" ";
+}
+cout<<endl;
+generateFibBottomUp(15);
 //generateFibBottomUp(20);
 return 0;
 
