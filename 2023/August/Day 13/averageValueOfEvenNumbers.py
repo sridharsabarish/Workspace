@@ -7,7 +7,5 @@ class Solution:
             if(number%6==0):
                 sums=sums+number
                 i=i+1
-        if(i!=0):
-            return int(sums/i)
-        return 0
+        return int(sums/i) if (i!=0) else 0
         

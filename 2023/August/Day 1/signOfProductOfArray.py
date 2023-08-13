@@ -11,6 +11,4 @@ class Solution:
             if i==0:
                 zero=1;
                 return 0;
-        if(neg%2==0):
-            return 1
-        return -1;
+        return 1 if (neg%2==0) else -1

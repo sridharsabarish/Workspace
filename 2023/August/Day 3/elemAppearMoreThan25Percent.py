@@ -7,7 +7,4 @@ class Solution:
         out ={}
         i=0;
         ts=len(arr)/4;
-        for i in range(len(arr)):
-            if(arr.count(arr[i])>ts):
-                return arr[i];
-        return -1;
+        return next((arr[i] for i in range(len(arr)) if (arr.count(arr[i])>ts)), -1)
