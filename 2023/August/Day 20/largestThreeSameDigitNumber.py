@@ -2,14 +2,13 @@
 class Solution:
     def largestGoodInteger(self, num: str) -> str:
         start=0;
-        end=start+3;
-        maxDig=-1;
-        sub=""
+        largestRepeatingDigit=-1;
+        outputString=""
         while(start<=len(num)-3):
-            if(len(set(num[start:end]))==1):
-                if(int(num[start])>maxDig):
-                    maxDig=int(num[start])
-                    sub=num[start:end]
-            start=start+1;
             end=start+3;
-        return sub
+            if(len(set(num[start:end]))==1):
+                if(int(num[start])>largestRepeatingDigit):
+                    largestRepeatingDigit=int(num[start])
+                    outputString=num[start:end]
+            start=start+1;
+        return outputString
