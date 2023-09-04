@@ -12,8 +12,6 @@ Logic
 
 
 '''
-
-
 class ListNode:
     
     def __init__(self,val):
@@ -22,7 +20,7 @@ class ListNode:
 
 class Solution:
     
-    def reverseList(self,head:ListNode):
+    def reverseList(self,head:ListNode)->ListNode:
         if head is None:
             return head
         
@@ -36,18 +34,31 @@ class Solution:
         return previous    
     
     
-    def print(self,head: ListNode):
+    def prints(self,head: ListNode):
         
         curr=head;
-        while curr.next is not None:
-            
-            print(curr.val,"->") 
+        while curr is not None:
+            if(curr.next is not None):
+                print(curr.val,"..") 
+            else:
+                print(curr.val)
             curr=curr.next;
 
-def main():
-    listNode = ListNode([1,2,3,4,5]);
+def testScenario():
+    l = ListNode("Mon")
+    e2 = ListNode("Tue")
+    e3 = ListNode("Wed")
+    e5 = ListNode("Thursday")
+    l.next=e2
+    e2.next=e3
+    e3.next=e5
     s=Solution()
-    s.print(l)
-    l=s.reverseList(l)
-    s.print(l)
-            
+    s.prints(l)
+    print("-------------Reversing LinkedList----------")
+    rev=s.reverseList(l)
+    s.prints(rev)
+
+def main():
+    testScenario();
+    
+main()
