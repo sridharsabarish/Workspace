@@ -11,7 +11,7 @@ Minimum Depth of Binary Tree
 '''
 Data structure for the element of the tree
 '''
-class Node(self,data):
+class Node:
     def __init__(self,data):
         self.value=data
         self.left =None
@@ -28,7 +28,7 @@ def minDepth(root):
         queueItem = q.pop(0);
         
         node = queueItem['node']
-        depth = queueItem('depth')
+        depth = queueItem['depth']
         
         if node.left is None and node.right is None:
             return depth
