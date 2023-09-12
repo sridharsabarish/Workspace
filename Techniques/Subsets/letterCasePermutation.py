@@ -1,3 +1,4 @@
+import time
 def permute(ip,op):
     
     '''
@@ -17,7 +18,7 @@ def permute(ip,op):
     permute(ip,op+ch2)
 
 
-def permute(inp):
+def permute_bitwise(inp):
     n= len(inp)
     
     mx = 1<<n;
@@ -32,16 +33,16 @@ def permute(inp):
         temp =""
         for i in combination:
             temp+=i
-        print temp
+        print(temp)
 
 
 def main():
     ip = "AB"
-    start=time.now()
+    start=time.time()
     permute(ip,"")
-    mid=time.now()
-    permute("ABC")
-    end=time.now()
+    mid=time.time()
+    permute_bitwise("ABC")
+    end=time.time()
     
     print("Op 1 : ",mid-start)
     print("Op 2 : ",end-mid)
