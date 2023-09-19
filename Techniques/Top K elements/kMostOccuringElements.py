@@ -13,28 +13,46 @@ Print the first k elements of the sorted array.
 
 
 '''
-k=3
+# Boiler Plate stuff
 
-arr = [3, 1, 4, 4, 5, 2, 6, 1]
 
-mp = {}
 
-for i in arr:
-    if i in mp:
-        mp[i] +=1
-    else:
-        mp[i]=1
-a = [0] * ((len(mp)))
-j=0
 
-for i in mp:
-    a[j]= [i,mp[i]]
-    j+=1
+def printFreq(arr,k):
+    mp = {}
 
-a = sorted(a,key=lambda x:x[0],reverse=True)
-a = sorted(a,key=lambda x:x[1],reverse=True)
-    
+    for i in arr:
+        if i in mp:
+            mp[i] +=1
+        else:
+            mp[i]=1
+            
 
-for i in range(k):
-    print(a[i][0],end=" ");
-    
+
+    # Create a vector 
+    a = [0] * ((len(mp)))
+    j=0
+
+
+    # populate the vector with key value pairing
+    for i in mp:
+        a[j]= [i,mp[i]]
+        j+=1
+
+
+    #Sort based on the first index, maybe to have highest value first? Descending order? Preference?
+    # a = sorted(a,key=lambda x:x[0],reverse=True)
+
+
+    # This sorts the vector based on the value in reverse
+    a = sorted(a,key=lambda x:x[1],reverse=True)
+        
+
+    for i in range(k):
+        print(a[i][0],end=" ");
+        
+if __name__ == "__main__":
+    k=3 # Defining K
+
+    arr = [3, 1, 4, 4, 5, 2, 6, 1,3]
+    printFreq(arr,k)
