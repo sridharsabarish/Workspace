@@ -2,16 +2,33 @@
 
 Approach:
 
-Create a stack to store the nodes.
-Initialize visited array of size N to keep the record of visited nodes.
-Run a loop from 0 till N
-if the node is not marked True in visited array
-Call the recursive function for topological sort and perform the following steps.
-Mark the current node as True in the visited array.
-Run a loop on all the nodes which has a directed edge to the current node
-if the node is not marked True in the visited array:
-Recursively call the topological sort function on the node
-Push the current node in the stack.
-Print all the elements in the stack.
+Source : https://www.interviewcake.com/concept/python3/topological-sort
 
 '''
+
+def topological_sort(digraph):
+    
+    indegrees= {node : 0 for node in digraph}
+
+    for node in digraph:
+        for neighbour in digraph[node]:
+            indegrees[neighbour] +=1
+
+    nodes_with_no_incoming_edges = [node for node in digraph if indegrees[node]==0]
+    topological_ordering =[]
+
+
+    while nodes_with_no_incoming_edges:
+
+        node = nodes_with_no_incoming_edges.pop()
+        topological_ordering.append(node)
+
+        for neighbour in digraph[node]:
+            indegrees[neighbour] -=1
+            if indegrees[neighbour] ==0:
+                nodes_with_no_incoming_edges.append(neighbour)
+
+    if len(topological_ordering) == len(digraph):
+        return topological_ordering
+    else:
+        raise Exception("Graph has a cycle!, No topological ordering exists" )
