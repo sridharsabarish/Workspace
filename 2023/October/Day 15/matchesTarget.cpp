@@ -10,10 +10,11 @@ class Solution {
   static vector<int> search(const vector<int> &arr, int targetSum) {
     // TODO: Write your code here
 
-    int end=sizeof(arr)-1;
+    int end=arr.size()-1;
     int start=0;
     
-    while(start<end)
+    cout<<" Start is "<<start<<" End is "<<end<<endl;
+    while(start<=end)
     {
       if(arr[start]+arr[end]==targetSum)
         {
@@ -37,14 +38,15 @@ class Solution {
 
 int main()
 {
+    cout<<" this is a test";
 Solution s;
 vector<int> array;
-array.insert(array.end(),3);
+array.insert(array.end(),1);
 array.insert(array.end(),2);
 array.insert(array.end(),3);
 array.insert(array.end(),4);
 array.insert(array.end(),5);
 array.insert(array.end(),6);
-int target =6;
+int target=6;
 s.search(array, target);
 }
