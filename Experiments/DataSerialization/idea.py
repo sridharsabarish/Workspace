@@ -6,8 +6,6 @@ The reverse process is called deserialization.
 
 '''
 
-
-
 import pickle
 class Idea:
     def __init__(self, name):
