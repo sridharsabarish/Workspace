@@ -1,19 +1,14 @@
-// Source : https://leetcode.com/problems/find-words-containing-character/
-class Solution {
-public:
-    vector<int> findWordsContaining(vector<string>& words, char x) {
+vector<int> findWordsContaining(vector<string>& words, char x) {
         vector<int> correctIndices;
-        for(int i=0;i<words.size();i++)
+        for(size_t i=0;i<words.size();i++)
         {
-            for(auto&j:words[i])
+
+            if(std::find(words[i].begin(),words[i].end(),x)!=words[i].end())
             {
-                if(j==x)
-                {
-                    correctIndices.insert(correctIndices.end(),i);
-                    break;
-                }
+                correctIndices.push_back(i);
             }
-        }
+        
+            }
+        
         return correctIndices;
     }
-};
