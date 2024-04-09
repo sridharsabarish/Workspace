@@ -23,8 +23,9 @@ def subsequence(inp,out):
     subsequence(inp[1:],out+inp[0])
     subsequence(inp[1:],out)
     
- out = ""
- input="abcd"   
+out = ""
+inp="abcd"   
+subsequence(inp,out)
     
     
     
