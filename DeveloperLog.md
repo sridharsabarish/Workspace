@@ -1,6 +1,11 @@
 # Developer Log
 
 
+## 23.09.2025
+* Realised RPI charger change doesn't bring the display back. Perhaps good to try HDMI
+* Even HDMI doesn't work. Needs more creative solutions.
+
+
 ## 20.09.2025
 * Investigated why latest smart mirror code was not working on RPI.
 * Found that it has to do with loguru import, so commneted it our and tried running, it worked
