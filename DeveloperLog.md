@@ -1,5 +1,11 @@
 # Developer Log
 
+## 30.09.2025
+* Finished off pending tasks in JIRA
+* Create a dummy issue in github
+* Brainstormed a bit for smart home and smart mirror.
+
+
 
 ## 23.09.2025
 * Realised RPI charger change doesn't bring the display back. Perhaps good to try HDMI
