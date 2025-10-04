@@ -1,5 +1,9 @@
 # Developer Log
 
+## 04.10.2025
+* Trying to install Home assistant in a VM
+
+
 ## 30.09.2025
 * Finished off pending tasks in JIRA
 * Create a dummy issue in github
