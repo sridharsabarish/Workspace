@@ -1,5 +1,12 @@
 # Developer Log
 
+## 06.10.2025
+* Designing and brainstorming of IOT products in my home.
+* read a bit about smart lighting in home
+* Also managed to brainstorm a bit about some automations to create a smart home.
+* Created story to add a prototype of smart inventory with limited items.
+* Brainstormed a bit about smart inventory and how to use weight/contact sensors to get my job done.
+
 ## 04.10.2025
 * Trying to install Home assistant in a VM
 
