@@ -1,5 +1,9 @@
 # Developer Log
 
+
+## 9.10.2025
+* Explored IFTTT video for humidity alerts. Could be good to implement this.
+
 ## 06.10.2025
 * Designing and brainstorming of IOT products in my home.
 * read a bit about smart lighting in home
