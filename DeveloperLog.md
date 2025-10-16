@@ -1,6 +1,7 @@
 # Developer Log
 
-
+## 15.10.2025
+* Currently exploring how to use automation, thinking how to integrate existing features to avoid duplicate work.
 ## 9.10.2025
 * Explored IFTTT video for humidity alerts. Could be good to implement this.
 
