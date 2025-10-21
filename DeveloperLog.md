@@ -1,5 +1,9 @@
 # Developer Log
 
+## 21.10.2025
+* Did some brainstorming for what is important for next week.
+* Decided to fix the humidiy sensor readings and also order a new display device for RPI
+
 ## 15.10.2025
 * Currently exploring how to use automation, thinking how to integrate existing features to avoid duplicate work.
 ## 9.10.2025
